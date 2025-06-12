@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" class="sl-theme-dark">
+<head>
+    <meta charset="UTF-8">
+    <title>School</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/themes/dark.css"/>
+    <script type="module"
+            src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/shoelace-autoloader.js"></script>
+    <script>
+        function verifyPassword() {
+            const password = document.getElementById('password').value;
+            if (password === "1001") {
+                alert('Access granted! Your first mission is to find the hidden treasure.');
+            } else {
+                alert('Access denied! Please try again.');
+            }
+        }
+    </script>
+</head>
+<body>
+<main>
+    <sl-card class="card-header">
+        <div slot="header"><h1>Świątynia Opatrzności Bożej</h1></div>
+        <p>
+            Oto ostatnia wskazówka: Czasami chleb to nie tylko chleb.
+        </p>
+
+    </sl-card>
+</main>
+</body>
+</html>

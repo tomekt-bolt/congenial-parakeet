@@ -10,7 +10,7 @@
         function verifyPassword() {
             const password = document.getElementById('password').value;
             if (password.toLowerCase() === 'wierzba' || password.toLowerCase() === 'parasol') { // Example password
-                alert('Access granted! Your first mission is to find the hidden treasure.');
+                window.location.href = '2-powstanie.html';
             } else {
                 alert('Access denied! Please try again.');
             }
@@ -31,7 +31,7 @@
     <sl-button size="large" variant="primary" onClick="verifyPassword()">OK</sl-button>
 </sl-card>
     <div style="text-align: center; margin-top: 2rem;">
-        <img src="radiation.png" style="max-width: 100%; height: auto;" />
+        <img src="radiation.png" style="max-width: 100%; height: auto;"/>
     </div>
 </main>
 </body>

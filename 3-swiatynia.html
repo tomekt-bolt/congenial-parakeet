@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" class="sl-theme-dark">
+<head>
+    <meta charset="UTF-8">
+    <title>School</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/themes/dark.css"/>
+    <script type="module"
+            src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/shoelace-autoloader.js"></script>
+    <script>
+        function verifyPassword() {
+            const password = document.getElementById('password').value;
+            if (password.toLowerCase() === "potocki") {
+                window.location.href = '4-palac.html';
+            } else {
+                alert('Odmowa dostępu!');
+            }
+        }
+    </script>
+</head>
+<body>
+<main>
+    <sl-card class="card-header">
+        <p>
+            Aby uzyskać kolejną wskazówkę, odnajdżcie pobliski pałac, zbudowany dla jednego z polskich królów.
+
+            W pałacowym parku stoi symboliczny grób, strzeżony przez cztery lwy.
+
+            Jak miał na nazwisko hrabia upamiętniony w tym miejscu?
+        </p>
+        <sl-input size="large" id="password" placeholder="Enter password"></sl-input>
+        <sl-divider></sl-divider>
+        <sl-button size="large" variant="primary" onClick="verifyPassword()">OK</sl-button>
+    </sl-card>
+
+</main>
+</body>
+</html>
