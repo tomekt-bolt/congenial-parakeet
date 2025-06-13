@@ -7,16 +7,13 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/themes/dark.css"/>
     <script type="module"
             src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/shoelace-autoloader.js"></script>
+    <script src="main.js"></script>
     <script>
         function verifyPassword() {
-            const password = document.getElementById('password').value;
-            if (password === '112') {
-                window.location.href = '1-school.html';
-            } else {
-                alert('Access denied! Please try again.');
-            }
+            baseVerifyPassword("112", "1-school.html");
         }
     </script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <main>

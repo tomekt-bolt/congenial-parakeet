@@ -7,16 +7,13 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/themes/dark.css"/>
     <script type="module"
             src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/shoelace-autoloader.js"></script>
+    <script src="main.js"></script>
     <script>
         function verifyPassword() {
-            const password = document.getElementById('password').value;
-            if (password === "2025") {
-                window.location.href = '3-swiatynia.html';
-            } else {
-                alert('Odmowa dostępu!.');
-            }
+            baseVerifyPassword("2025", "3-swiatynia.html");
         }
     </script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <main>

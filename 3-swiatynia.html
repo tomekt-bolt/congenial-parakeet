@@ -7,17 +7,13 @@
     <script type="module"
             src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/shoelace-autoloader.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <script src="main.js"></script>
     <script>
         function verifyPassword() {
-            const password = document.getElementById('password').value;
-            if (password.toLowerCase() === "potocki") {
-                window.location.href = '4-palac.html';
-            } else {
-                alert('Odmowa dostępu!');
-            }
+            baseVerifyPassword("potocki", "4-palac.html");
         }
     </script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <main>

@@ -1,0 +1,6 @@
+body {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    background: radial-gradient(circle at top, #885a22 0%, #000 100%);
+    min-height: 100vh;
+}
