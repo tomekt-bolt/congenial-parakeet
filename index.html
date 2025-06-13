@@ -19,16 +19,18 @@
 </head>
 <body>
 <main>
-<sl-card  class="card-header">
-    <div slot="header"><h1>Welcome Adam, Piter, Tymek and Józek!</h1></div>
-    <p>Are you ready to celebrate Kazik's and Tadeusz's birthday?
+    <sl-card class="card-header">
+        <div slot="header"><h1>Welcome Adam, Piter, Tymek and Józek!</h1></div>
+        <p>Are you ready to celebrate Kazik's and Tadeusz's birthday?
 
-    To verify your identity and unlock your first mission, fill the number of your school in the field below:
-    </p>
-    <sl-input size="large" type="number" id="password" placeholder="Enter your school number"></sl-input>
-    <sl-divider></sl-divider>
-    <sl-button size="large" variant="primary" onClick="verifyPassword()">OK</sl-button>
-</sl-card>
+            To verify your identity and unlock your first mission, fill the number of your school in the field below:
+        </p>
+        <form autocomplete="off" onSubmit="event.preventDefault(); verifyPassword();">
+            <sl-input size="large" type="number" id="password" placeholder="Enter your school number" autocomplete="off"></sl-input>
+        </form>
+        <sl-divider></sl-divider>
+        <sl-button size="large" variant="primary" onClick="verifyPassword()">OK</sl-button>
+    </sl-card>
 </main>
 </body>
 </html>

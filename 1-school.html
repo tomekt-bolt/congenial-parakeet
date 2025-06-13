@@ -19,17 +19,20 @@
 </head>
 <body>
 <main>
-<sl-card  class="card-header">
-    <div slot="header"><h1>Build the first Polish nuclear power plant</h1></div>
-    <p>You will join the scientific-military team on a mission to build the first nuclear power plant in Poland,
-    together with your leaders, major Kazik from the Army and professor Tadeusz from the Institute of Nuclear Research.
+    <sl-card class="card-header">
+        <div slot="header"><h1>Build the first Polish nuclear power plant</h1></div>
+        <p>You will join the scientific-military team on a mission to build the first nuclear power plant in Poland,
+            together with your leaders, major Kazik from the Army and professor Tadeusz from the Institute of Nuclear
+            Research.
 
-    To get the next hint, find, go to a nearby monument from Warsaw Uprising and fill in the password below.
-    </p>
-    <sl-input size="large"  id="password" placeholder="Enter password"></sl-input>
-    <sl-divider></sl-divider>
-    <sl-button size="large" variant="primary" onClick="verifyPassword()">OK</sl-button>
-</sl-card>
+            To get the next hint, find, go to a nearby monument from Warsaw Uprising and fill in the password below.
+        </p>
+        <form autocomplete="off" onSubmit="event.preventDefault(); verifyPassword();">
+            <sl-input size="large" id="password" placeholder="Enter password" autocomplete="off"></sl-input>
+        </form>
+        <sl-divider></sl-divider>
+        <sl-button size="large" variant="primary" onClick="verifyPassword()">OK</sl-button>
+    </sl-card>
     <div style="text-align: center; margin-top: 2rem;">
         <img src="radiation.png" style="max-width: 100%; height: auto;"/>
     </div>

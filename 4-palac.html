@@ -12,7 +12,7 @@
             if (password === "1001") {
                 window.location.href = '5-chleb.html';
             } else {
-                alert('Access denied! Please try again.');
+                alert('Odmowa dostępu!');
             }
         }
     </script>
@@ -20,7 +20,6 @@
 <body>
 <main>
     <sl-card class="card-header">
-        <div slot="header"><h1>Świątynia Opatrzności Bożej</h1></div>
         <p>
             Waszym zadaaniem jest zdobyć paliwo do reaktora - radioaktywny uran.
         </p>
@@ -40,7 +39,9 @@
         <p>
             Podpoweidź: jadąc w odpowiednim kierunki miniecie meczet i siedzibę telewizji.
         </p>
-        <sl-input size="large" id="password" placeholder="Enter password"></sl-input>
+        <form autocomplete="off" onSubmit="event.preventDefault(); verifyPassword();">
+            <sl-input size="large" id="password" type="number" placeholder="Hasło" autocomplete="off"></sl-input>
+        </form>
         <sl-divider></sl-divider>
         <sl-button size="large" variant="primary" onClick="verifyPassword()">OK</sl-button>
     </sl-card>
