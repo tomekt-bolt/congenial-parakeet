@@ -2,6 +2,7 @@
 <html lang="en" class="sl-theme-dark">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>School</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/themes/dark.css"/>
     <script type="module"
@@ -19,14 +20,14 @@
 </head>
 <body>
 <main>
-    <sl-card class="card-header">
+    <sl-card>
         <p>
             Aby uzyskać kolejną wskazówkę, udajcie się pod Świątynię Opatrzności Bożej.
 
             Znajdziecie tam pewną liczbę wypisaną na polskiej fladze - to koljene hasło.
         </p>
         <form autocomplete="off" onSubmit="event.preventDefault(); verifyPassword();">
-            <sl-input size="large" id="password" placeholder="Hasło"  autocomplete="off"></sl-input>
+            <sl-input size="large" id="password" placeholder="Hasło" autocomplete="off"></sl-input>
         </form>
         <sl-divider></sl-divider>
         <sl-button size="large" variant="primary" onClick="verifyPassword()">OK</sl-button>
